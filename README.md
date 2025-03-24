@@ -1,5 +1,47 @@
 # Brandtools in Erlang
 
+## Erlang
+
+Um den in diesem Repositorium enthaltenen Code zu nutzen ist es notwendig einen Zugang zur E-Shell von Erlang zu haben.
+
+### Projekt herunterladen
+
+Dies kann mit Hilfe der unter dem <> Code Button enthaltenen zip erfolgen, oder über git:
+
+```bash
+git clone https://github.com/ad2108/Brandtools-Erlang.git
+```
+
+### Compilation
+
+Um Dateien mit der Endung *.erl nutzen zu könne sollten diese Compiliert werden. Die kann mit Hilfe dem von Erlang zur Verfügung gestellten Compiler erlc erfolgen. Dieser kann über die offizielle Webseite von [Erlang](www.erlang.org/) heruntergeladen werden.
+
+Automatisiert kann Erlang mit Hilfe von Make compiliert werden. Dazu ist es notwendig make(Achtung nicht cmake) installiert zu haben.
+
+Dies kann z.B. wie fogt erfolgen:
+
+Linux:
+
+```bash
+sudo apt install make
+```
+
+Msys2(Windows):
+
+```bash
+pacman -S make
+```
+
+Bei Windows ist es dabei sehr wichtig darauf zu achten die TEMP Variablen richtig zusetzen.
+
+### Interaktion
+
+Um mit dem compilierten Dateien(*.beam) zu interagieren kann man in dem build Ordner das Terminal starten und die E-Shell starten. Dies geht über den Befehl erl:
+
+```bash
+erl
+```
+
 ## 1. Umrechnungs Modul
 
 Dieses Modul enthält Umrechnungen von Einheiten. In diesen Projekt wird es verwendet um die Eingabewerte vor den aufrufen der Funktion in die nativen Einheiten der nachfolgenden Funktion umzuwandeln.
