@@ -14,7 +14,7 @@ git clone https://github.com/ad2108/Brandtools-Erlang.git
 
 ### Compilation
 
-Um Dateien mit der Endung *.erl nutzen zu könne sollten diese Compiliert werden. Die kann mit Hilfe dem von Erlang zur Verfügung gestellten Compiler erlc erfolgen. Dieser kann über die offizielle Webseite von [Erlang](https://www.erlang.org/) heruntergeladen werden.
+Um Dateien mit der Endung \*.erl nutzen zu könne sollten diese Compiliert werden. Die kann mit Hilfe dem von Erlang zur Verfügung gestellten Compiler erlc erfolgen. Dieser kann über die offizielle Webseite von [Erlang](https://www.erlang.org/) heruntergeladen werden.
 
 Automatisiert kann Erlang mit Hilfe von Make compiliert werden. Dazu ist es notwendig make(Achtung nicht cmake) installiert zu haben.
 
@@ -32,15 +32,17 @@ Msys2(Windows):
 pacman -S make
 ```
 
-Bei Windows ist es dabei sehr wichtig darauf zu achten die TEMP Variablen richtig zusetzen.
+Bei Windows ist es dabei sehr wichtig darauf zu achten die TEMP Variablen richtig zu setzen.
 
 ### Interaktion
 
-Um mit dem compilierten Dateien(*.beam) zu interagieren kann man in dem build Ordner das Terminal starten und die E-Shell starten. Dies geht über den Befehl erl:
+Um mit dem compilierten Dateien(\*.beam) zu interagieren kann man in dem build Ordner das Terminal starten und die E-Shell starten. Dies geht über den Befehl erl:
 
 ```bash
 erl
 ```
+
+Um einen Befehl in der E-Shell auszuführen ist es wichtig diesen mit einem . abzuschließen!
 
 ## 1. Umrechnungs Modul
 
@@ -48,7 +50,7 @@ Dieses Modul enthält Umrechnungen von Einheiten. In diesen Projekt wird es verw
 
 ### 1.1 Umrechnung von und zu Prozent
 
-zu_prozent, von_prozent
+zu\_prozent, von\_prozent
 
 ```erlang
 umrechnung:zu_prozent(0.4)
@@ -60,7 +62,7 @@ umrechnung:von_prozent({prozent, 14})
 
 ### 1.2 Umrechnung zu Celsius, Fahrenheit und Kelvin
 
-zu_celius, zu_fahrenheit, zu_kelvin
+zu\_celius, zu\_fahrenheit, zu\_kelvin
 
 ```erlang
 umrechnung:zu_celsius({kelvin, 15})
@@ -75,7 +77,7 @@ umrechnung:zu_kelvin({fahrenheit, 50})
 
 ### 1.3 Umrechnung zu Sekunden, Minuten und Stunden
 
-zu_sekunden, zu_minuten, zu_stunden
+zu\_sekunden, zu\_minuten, zu\_stunden
 
 ```erlang
 umrechnung:zu_sekunden({min, 2})
@@ -90,7 +92,7 @@ umrechnung:zu_stunden({min, 180})
 
 ### 1.4 Umrechnung von Gram, Kilogram und Tonne
 
- zu_gram, zu_kilogram, zu_tonne
+ zu\_gram, zu\_kilogram, zu\_tonne
 
 ```erlang
 umrechnung:zu_gram({kg, 15})
@@ -105,7 +107,7 @@ umrechnung:zu_tonne({kg, 1500})
 
 ### 1.5 Umrechnung zu Milimeter, Centimeter, Meter und Kilometer
 
-zu_milimeter, zu_centimeter, zu_meter, zu_kilometer
+zu\_milimeter, zu\_centimeter, zu\_meter, zu\_kilometer
 
 ```erlang
 umrechnung:zu_milimeter({m, 0.15})
@@ -123,7 +125,7 @@ umrechnung:zu_kilometer({m, 15})
 
 ### 1.6 Umrechnung zu Newton, Kilopond, Kilonewton und Meganewton
 
-zu_newton, zu_kilopond, zu_kilonewton, zu_meganewton
+zu\_newton, zu\_kilopond, zu\_kilonewton, zu\_meganewton
 
 ```erlang
 umrechnung:zu_newton({kilonewton, 0.16})
@@ -141,7 +143,7 @@ umrechnung:zu_meganewton({kilonewton, 21650})
 
 ### 1.7 Umrechnung zu Pascal, Kilopascal, Megapascal, N/mm², kN/cm² und MN/m²
 
-zu_pascal, zu_kilopascal, zu_megapascal, zu_newton_pro_mm2, zu_kilonewton_pro_cm2, zu_meganewton_pro_m2
+zu\_pascal, zu\_kilopascal, zu\_megapascal, zu\_newton\_pro\_mm2, zu\_kilonewton\_pro\_cm2, zu\_meganewton\_pro\_m2
 
 ```erlang
 umrechnung:zu_pascal({kilopascal, 1})
@@ -253,3 +255,4 @@ waermestrom:strahlung({phi, 1}, {emmisivitaet, {prozent, 70}},
 ## 5. Tests
 
 Achtung alle Tests sind unvollständig und müssen noch auf alle Anwendungsfälle vervollständigt werden. Besonders die If-Statements. Beton ist auch noch nicht getestet.
+
