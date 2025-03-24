@@ -14,7 +14,7 @@ git clone https://github.com/ad2108/Brandtools-Erlang.git
 
 ### Compilation
 
-Um Dateien mit der Endung *.erl nutzen zu könne sollten diese Compiliert werden. Die kann mit Hilfe dem von Erlang zur Verfügung gestellten Compiler erlc erfolgen. Dieser kann über die offizielle Webseite von [Erlang](www.erlang.org/) heruntergeladen werden.
+Um Dateien mit der Endung *.erl nutzen zu könne sollten diese Compiliert werden. Die kann mit Hilfe dem von Erlang zur Verfügung gestellten Compiler erlc erfolgen. Dieser kann über die offizielle Webseite von [Erlang](https://www.erlang.org/) heruntergeladen werden.
 
 Automatisiert kann Erlang mit Hilfe von Make compiliert werden. Dazu ist es notwendig make(Achtung nicht cmake) installiert zu haben.
 
