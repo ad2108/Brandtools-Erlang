@@ -1,4 +1,11 @@
 %Umrechnungen
+%Author: ad2108
+%Version: 1.0
+%Date: 2025-04-05
+%License: MIT
+
+%Description:
+%    Umrechnungsmodule (Einheiten siehe export)
 
 -module(umrechnung).
 -export([zu_prozent/1, von_prozent/1,

@@ -1,4 +1,11 @@
-%Baustahl Wärmekennwerte 20 bis 1200 Grad Celsius
+%Baustahl Wärmekennwerte
+%Author: ad2108
+%Version: 1.0
+%Date: 2025-04-05
+%License: MIT
+
+%Description:
+%    Baustahl Wärmekennwerte 20 bis 1200 Grad Celsius
 
 -module(baustahl).
 -import(umrechnung, [zu_celsius/1]).

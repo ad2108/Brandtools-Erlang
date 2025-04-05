@@ -1,4 +1,11 @@
-%Platten Wärmekennwerte 20 bis 1200 Grad Celsius
+%Platten Wärmekennwerte
+%Author: ad2108
+%Version: 1.0
+%Date: 2025-04-05
+%License: MIT
+
+%Description:
+%    Platten Wärmekennwerte 20 bis 1200 Grad Celsius
 
 -module(platten).
 -export([kennwerte/0, dichte/0, kapazitaet/0, leitfaehigkeit/0]).

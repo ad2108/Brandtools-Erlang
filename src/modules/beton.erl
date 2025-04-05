@@ -1,4 +1,11 @@
-%Beton Wärmekennwerte 20 bis 1200 Grad Celsius
+%Beton Wärmekennwerte
+%Author: ad2108
+%Version: 1.0
+%Date: 2025-04-05
+%License: MIT
+
+%Description:
+%    Beton Wärmekennwerte 20 bis 1200 Grad Celsius
 
 -module(beton).
 -import(umrechnung, [zu_celsius/1]).

@@ -1,4 +1,11 @@
-%Edelstahl Wärmekennwerte 20 bis 1200 Grad Celsius
+%Edelstahl Wärmekennwerte
+%Author: ad2108
+%Version: 1.0
+%Date: 2025-04-05
+%License: MIT
+
+%Description:
+%    Edelstahl Wärmekennwerte 20 bis 1200 Grad Celsius
 
 -module(edelstahl).
 -import(umrechnung, [zu_celsius/1]).

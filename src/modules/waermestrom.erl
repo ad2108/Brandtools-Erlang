@@ -1,4 +1,12 @@
-%Wärmestrom
+%wärmestrom
+%Author: ad2108
+%Version: 1.0
+%Date: 2025-04-05
+%License: MIT
+
+%Description:
+%    Wärmestrom Gleichungen
+
 
 -module(waermestrom).
 -import(umrechnung, [zu_kelvin/1, von_prozent/1]).

@@ -1,4 +1,12 @@
-%Matten Wärmekennwerte 20 bis 1200 Grad Celsius
+%Matten Wärmekennwerte
+%Author: ad2108
+%Version: 1.0
+%Date: 2025-04-05
+%License: MIT
+
+%Description:
+%    Matten Wärmekennwerte 20 bis 1200 Grad Celsius
+
 
 -module(matten).
 -export([kennwerte/0, dichte/0, kapazitaet/0, leitfaehigkeit/0]).
