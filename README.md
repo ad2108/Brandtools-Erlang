@@ -12,7 +12,7 @@ Dies kann mit Hilfe der unter dem <> Code Button enthaltenen zip erfolgen, oder 
 git clone https://github.com/ad2108/Brandtools-Erlang.git
 ```
 
-### Compilation
+### Kompilation
 
 Um Dateien mit der Endung \*.erl nutzen zu könne sollten diese Compiliert werden. Die kann mit Hilfe dem von Erlang zur Verfügung gestellten Compiler erlc erfolgen. Dieser kann über die offizielle Webseite von [Erlang](https://www.erlang.org/) heruntergeladen werden.
 
@@ -32,7 +32,7 @@ Msys2(Windows):
 pacman -S make
 ```
 
-Bei Windows ist es dabei sehr wichtig darauf zu achten die TEMP Variablen richtig zu setzen.
+Bei Windows ist es dabei sehr wichtig darauf zu achten die PATH Variablen richtig zu setzen.
 
 ### Interaktion
 
@@ -164,7 +164,7 @@ umrechnung:zu_meganewton_pro_m2({megapascal, 1.57})
 
 ## 2. Brandkurven Modul
 
-Dieses Modul beinhaltet die Einheitstemperaturzeitkurve, die Externe Brandkurve und die HydroKarbon Brandkurve. Über die Funktion brandkurven kann die Temperatur des Brandes mit Hilfe der Zeit bestimmt werden. Über die Funktion iteration kann zur Temperatur der Zeitpunkt nach begin des Brandes an dem diese Temperatur auftritt bestimmt werden. Dabei können alle passenden Einheiten die in Umrechnung erwähnt sind angewendet werden.
+Dieses Modul beinhaltet die Einheits-Temperaturzeitkurve, die Externe Brandkurve und die Hydro-Karbon Brandkurve. Über die Funktion brandkurven kann die Temperatur des Brandes mit Hilfe der Zeit bestimmt werden. Über die Funktion iteration kann zur Temperatur der Zeitpunkt nach Beginn des Brandes an dem diese Temperatur auftritt bestimmt werden. Dabei können alle passenden Einheiten die in Umrechnung erwähnt sind angewendet werden.
 
 ```erlang
 %Brandkurven
@@ -190,7 +190,7 @@ brandkurven:iteration(hydro, {celsius, 1000})
 
 ## 3. Materialkennwerte
 
-Hier sind einige der wichtigsten Materialkennwerte für die Baustoffe Baustahl, Edelstahl, Beton, Putz, Wärmedämmplatten und Wärmedämmmatten eingespeichert. Jedes dieser Baustoffe hat ein eigenes gesondertes modul. Dabei werden nur Temperaturen zwischen 20 und 1200 Grad Celsius berücksichtigt!
+Hier sind einige der wichtigsten Materialkennwerte für die Baustoffe Baustahl, Edelstahl, Beton, Putz, Wärmedämmplatten und Wärmedämmmatten eingespeichert. Jedes dieser Baustoffe hat ein eigenes gesondertes Modul. Dabei werden nur Temperaturen zwischen 20 und 1200 Grad Celsius berücksichtigt!
 
 ```erlang
 %Baustahl
